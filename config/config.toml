@@ -1,0 +1,41 @@
+#Author: Liam Hellend
+#Email: liamhellend@gmail.com
+#Config description: Store malscans configuration (loaded at runtime)
+#Config version: 1.0.0
+
+[env]
+    runtime = "prod" #Choose "debug" or "dev" or "prod" 
+    filestore = ""
+    cpu_cores = 1
+    max_file_proc = 2 #Only used in mode-2, allows specified amount of files to run concurrently
+    client = "" #Must be set for each unique client (set when running install script)
+    site = "" #Must be set for each unique client and unique site (set when running install script)
+    network = "" #Must be set for each unique client and unique network (set when running install script)
+
+[logging]
+    filename = ""
+    max_size = 50 #megabytes
+    max_backups = 1
+    max_age = 14 #days
+    compress = false
+
+[alert]
+    local_path = ""
+    remote_path = ""
+    remote_host = "" 
+    remote_port = ""
+    scp_pkey = ""
+    scp_user = ""
+    
+[elasticsearch]
+    enabled = false
+    tls = false
+    url1 = ""
+    username = ""
+    password = ""
+    es_cert = "" 
+    es_key = "" 
+    es_ca = "" 
+
+
+
