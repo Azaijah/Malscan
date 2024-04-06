@@ -1,0 +1,77 @@
+#Author: Liam Hellend
+#Email: liamhellend@gmail.com
+#Config description: Store malscans configuration (loaded at runtime)
+#Config version: 1.0.0
+
+#[[plugin]]
+#  enabled = true
+#  name = "" 
+#  description = ""
+#  category = ""
+#  image = ""
+#  repository = ""
+#  updatable = false  (for example, if the plugin has an update command that updates av signatures this would be set to true)
+#  mime = "*"
+
+
+[[plugin]]
+  enabled = false
+  name = "clamav"
+  description = "ClamAV Anti-virus"
+  category = "av"
+  image = "malscan/clamav"
+  repository = ""
+  updatable = true
+  mime = "*" #this field is currently non-functional
+
+[[plugin]]
+  enabled = true
+  name = "sophos"
+  description = "Sophos Anti-virus"
+  category = "av"
+  image = "malscan/sophos"
+  repository = ""
+  updatable = true
+  mime = "*" #this field is currently non-functional
+
+[[plugin]]
+  enabled = true
+  name = "comodo"
+  description = "Comodo Anti-virus"
+  category = "av"
+  image = "malscan/comodo"
+  repository = ""
+  updatable = true #comodo's updates are not stable and need testing before being pushed to production as of (28/02/2020) 
+  mime = "*" #this field is currently non-functional
+
+[[plugin]]
+  enabled = true
+  name = "yara"
+  description = "Yara Anti-virus"
+  category = "av"
+  image = "malscan/yara"
+  repository = ""
+  updatable = false
+  mime = "*" #this field is currently non-functional
+
+[[plugin]]
+  enabled = true
+  name = "manalyze"
+  description = "Manalyze Anti-virus"
+  category = "er"
+  image = "malscan/manalyze"
+  repository = ""
+  updatable = false
+  mime = "pe" #this field is currently non-functional
+
+[[plugin]]
+  enabled = true
+  name = "floss"
+  description = "Floss string extractor"
+  category = "er"
+  image = "malscan/floss"
+  repository = ""
+  updatable = false
+  mime = "pe" #this field is currently non-functional
+
+
