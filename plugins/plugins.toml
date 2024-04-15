@@ -41,7 +41,7 @@
   category = "av"
   image = "malscan/comodo"
   repository = ""
-  updatable = true #comodo's updates are not stable and need testing before being pushed to production as of (28/02/2020) 
+  updatable = true #comodo's updates are not stable and need testing
   mime = "*" #this field is currently non-functional
 
 [[plugin]]
